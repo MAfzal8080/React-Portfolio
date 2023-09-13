@@ -1,0 +1,13 @@
+.boot{
+    display: flex !important;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .boot{
+        display:block !important;
+    }
+    .rounded{
+        width: fit-content !important;
+    }
+}

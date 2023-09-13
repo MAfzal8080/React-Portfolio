@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Moonrocks&family=VT323&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Monoton&family=Rubik+Moonrocks&family=VT323&display=swap');
+
+.code{
+    font-size: 30px;
+    font-family: 'Kablammo', cursive; 
+}
+
+ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.nav{
+    position: relative;
+    float: right;
+}
+
+.nav-link{
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-link:hover{
+    color:#198754 ;
+}
+.nav-link:focus{
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    width: 20px;
+    margin-top: auto;
+    padding: 1.2rem;
+    height: 88%;
+    align-items: center;
+}
+
+.topp{
+    justify-content: space-between;
+    position: fixed;
+}
+
+.burger{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 8px;
+}
+
+.burger:active{
+    opacity: 0.8;
+}
+
+.bar{
+    width: 25px;
+    height:2px;
+    border-radius: 2px;
+    background-color: white;
+    margin: 2px;
+}
+
+.menu{
+    width: 9rem;
+    height: 100vh;
+    position: fixed;
+    left: 85vw;
+    z-index: 1;
+    border-left: 2px solid rgb(242, 190, 190);
+}
+
+.menu ul {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media screen and (min-width:901px) {
+    .burger{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav{
+        display: none !important;
+    }
+
+    .sidebar{
+        display: none !important;
+    }
+    .align-middle{
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        color: white;
+        margin: 2px;
+        align-items: center;
+        justify-content: center;
+    }
+    .topp{
+        position: fixed;
+        z-index: 1;
+        /* background-color: #010247; */
+    }
+}
+
+.fa-github, .fa-linkedin-square, .fa-instagram{
+    font-size: 35px;
+    margin-bottom: 3rem;
+}

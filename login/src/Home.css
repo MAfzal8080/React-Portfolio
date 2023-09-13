@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Moonrocks&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Monoton&family=Rubik+Moonrocks&family=Ubuntu:wght@500&family=VT323&display=swap');
+
+.font-weight-bold{
+    font-weight: 600;
+    color: wheat;
+    font-size: 25px;
+}
+
+.font-weight-bold2{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font-weight-bold3{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    font-family: 'Rubik Moonrocks', cursive;
+    color: white;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor{
+    font-weight: bolder;
+    animation: blink 1s infinite linear;
+}
+
+img{
+    width: 50rem;
+    position: relative;
+}
+
+.home{
+    padding-top: 8rem;
+}
+
+@media screen and (max-width:900px) {
+    .home{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .first{
+        display: block !important;
+
+    }
+}
+
+
+@keyframes blink{
+    0%, 100%{opacity: 0%;}
+    50%{opacity: 100%;}
+}
