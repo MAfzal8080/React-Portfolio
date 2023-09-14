@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <div className="container-fluid d-flex topp mb-5">
-        <span className='text-light mx-2 code'>Fortfolio</span>
+        <span className='text-light mx-2 code'><Link className="nav-link" aria-current="page" to="/login">Fortfolio</Link></span>
         <div className="nav my-3 d-flex">
           <ul className="d-flex">
             <li className="nav-item mx-5">

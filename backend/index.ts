@@ -30,31 +30,6 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server');
 });
 
-app.post('/register', async (req:Request, res:Response)=>{
-  const check = await model.findOne({ email: req.body.email });
-  const salt = await bcrypt.genSalt(10);
-  const hash  = await bcrypt.hash(req.body.password, salt);
-  console.log(hash);
-  
-   if(!check){
-     const user = new model({
-       fname: req.body.fname,
-       lname: req.body.lname,
-       email: req.body.email,
-       password: hash
-     });
-     console.log(user);
-     const saveUser = await user.save();
-     if(!saveUser){
-       res.status(422).json({"message": "Error while saving data"})
-     }else{
-       res.status(201).json({"user": saveUser, "success": " User created successfully"})
-     }
-   }else{
-    res.status(402).json({ "error": "User already exists with the given email!" })
-   }
-})
-
 app.post('/login', async (req:Request, res:Response)=>{
   try {
     const email = await model.findOne({email: req.body.email});

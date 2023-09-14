@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
   const [credentials, setCredentials] = useState({email:'', password:''})
@@ -29,6 +29,7 @@ function Login() {
     <div className='container d-flex justify-content-center py-5'>
       <div className="text-center my-4 w-50 rounded border p-2">
         <h3 className='text-light'>Login</h3>
+        <Link className="nav-link" aria-current="page" to="/login">Fortfolio</Link>
         {error && error ?
         <span className='text-danger'>{error}</span> : ''
         }<br />
