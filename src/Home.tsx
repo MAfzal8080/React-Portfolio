@@ -9,22 +9,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   if(!localStorage.getItem('jwt')){
-  //     navigate('/login');
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   const txt = "Full Stack Development";
-  //   setInterval(()=>{
-  //     if(index < txt.length){
-  //       setText(text + txt[index]);
-  //       setIndex(index + 1);
-  //     }
-  //   },300);
-  // }, [])
 
   const txt = 'Full Stack Development!';
 
@@ -63,7 +47,7 @@ const Home = () => {
             <span className="font-weight-bold3">I'm into <span className="text-warning"> {text}</span><span className='cursor'>|</span>
             </span>
             <div className="container-fluid d-block my-2">
-              <Link to="src/assets/Resume.pdf" target="_blank" className="btn btn-primary mx-2" download={true}>Download Resume</Link>
+              <Link to="assets/Resume.pdf" target="_blank" className="btn btn-primary mx-2" download={true}>Download Resume</Link>
             </div>
           </span>
         </div>
