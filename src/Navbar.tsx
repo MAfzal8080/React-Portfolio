@@ -62,8 +62,8 @@ const Navbar = () => {
             <hr />
           </ul>
           <span className='align-middle'>
-            <Link to="https://www.linkedin.com/in/mohammad-afzal-4b76a7260" target='_blank' className='text-white' onClick={()=> setOpen(open=> !open)}><i className="fa fa-github"></i></Link><hr />
-            <Link to="https://github.com/MAfzal8080" target='_blank' className='text-white' onClick={()=> setOpen(open=> !open)}><i className="fa fa-linkedin-square"></i></Link><hr />
+            <Link to="https://github.com/MAfzal8080" target='_blank' className='text-white' onClick={()=> setOpen(open=> !open)}><i className="fa fa-github"></i></Link><hr />
+            <Link to="https://www.linkedin.com/in/mohammad-afzal-4b76a7260" target='_blank' className='text-white' onClick={()=> setOpen(open=> !open)}><i className="fa fa-linkedin-square"></i></Link><hr />
             <Link to="https://www.instagram.com/sfprobie/" target='_blank' className='text-white' onClick={()=> setOpen(open=> !open)}><i className="fa fa-instagram"></i>
           </Link><hr />
           {token && token ? 
@@ -75,13 +75,13 @@ const Navbar = () => {
       </div>
       <div className='sidebar text-light d-flex'>
         <span className='align-middle'>
-          <Link to="https://www.linkedin.com/in/mohammad-afzal-4b76a7260" target='_blank' className='text-white'><i className="fa fa-github"></i></Link>
-          <Link to="https://github.com/MAfzal8080" target='_blank' className='text-white'><i className="fa fa-linkedin-square"></i></Link>
+          <Link to="https://github.com/MAfzal8080" target='_blank' className='text-white'><i className="fa fa-github"></i></Link>
+          <Link to="https://www.linkedin.com/in/mohammad-afzal-4b76a7260" target='_blank' className='text-white'><i className="fa fa-linkedin-square"></i></Link>
           <Link to="https://www.instagram.com/sfprobie/" target='_blank' className='text-white'><i className="fa fa-instagram"></i></Link>
         </span>
       </div>
     </>
-  )
+  ) 
 }
 
 export default Navbar
