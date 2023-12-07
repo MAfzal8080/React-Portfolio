@@ -12,7 +12,7 @@ function Login() {
 
   const userLogin = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
     e.preventDefault();
-    axios.post('http://localhost:5050/login', {
+    axios.post('https://backend-7w9g.onrender.com/login', {
       "email": credentials['email'],
       "password": credentials['password']
     }).then((res)=>{

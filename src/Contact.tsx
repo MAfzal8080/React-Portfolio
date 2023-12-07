@@ -16,7 +16,7 @@ const Contact = () => {
         setMsg('Name, email, mobile number and message is required!')
       } else{
              e.preventDefault();
-               axios.post('http://localhost:5050/query', {
+               axios.post('https://backend-7w9g.onrender.com/query', {
                    "name": query['name'],
                    "email" : query["email"],
                    "mobile": query["mobile"],

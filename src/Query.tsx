@@ -24,7 +24,7 @@ const Query = () => {
     
     const fetchData = async ()=>{
         const jwtToken = localStorage.getItem('jwt');
-        const data = await fetch('http://localhost:5050/getquery', {
+        const data = await fetch('https://backend-7w9g.onrender.com/getquery', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
