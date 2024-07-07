@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import ComputerCanvas from "./ComputerCanvas";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const Home = () => {
   const [text, setText] = useState('');

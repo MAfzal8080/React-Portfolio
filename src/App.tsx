@@ -3,6 +3,7 @@ import Home from './Home'
 import Navbar from './Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Query from './Query';
+import React from 'react';
 
 function App() {
 

@@ -12,6 +12,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Ball from "./Ball";
+import React from "react";
 
 const About = () => {
   // const navigate = useNavigate();
@@ -42,6 +43,9 @@ const About = () => {
                 Education
               </h3>
               <ul className="d-flex flex-column">
+              <li>
+                  Master of Computer Application from Shri Ramswaroop Memorial College of Engineering and Managenent
+                </li>
                 <li>
                   Bachelor of Science in Mathematics from University of Lucknow
                 </li>
@@ -62,15 +66,15 @@ const About = () => {
                 Projects
               </h3>
               <ul className="d-flex flex-column">
-                <li>Text editor</li>
-                <li>News app</li>
-                <li>Youtube clone</li>
-                <li>Note app</li>
-                <li>Todo list</li>
+                <li><a href="https://regal-pudding-0c7ce2.netlify.app/" target="_blank">Note taking app</a></li>
                 <li>Image Gallery</li>
-                <li>OMDB app</li>
+                <li>Youtube clone</li>
+                <li>News app</li>
+                {/* <li>OMDB app</li> */}
                 <li>Crypto app</li>
-                <li>Text extractor</li>
+                {/* <li>Text extractor</li> */}
+                <li>Text editor</li>
+                <li>Todo list</li>
               </ul>
             </div>
           </VerticalTimelineElement>
@@ -86,7 +90,7 @@ const About = () => {
                 Internship
               </h3>
               <ul>
-                <li>Cloudhub24</li>
+                <li>Zedgon Solutions Pvt Ltd</li>
               </ul>
             </div>
           </VerticalTimelineElement>
@@ -102,7 +106,7 @@ const About = () => {
                   Certifications
                 </h3>
                 <ul className="d-flex flex-column">
-                  <li>Full stack development</li>
+                  {/* <li>Full stack development</li> */}
                   <li>O level</li>
                 </ul>
               </div>
