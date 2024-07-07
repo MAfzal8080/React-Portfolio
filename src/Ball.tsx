@@ -2,7 +2,7 @@ import {Tilt} from 'react-tilt';
 import './Ball.css';
 import {motion} from 'framer-motion';
 
-const img = ['html', 'css', 'javascript', 'reactjs','nextjs', 'angular', 'nodejs', 'redux', 'typescript', 'mongodb', 'git', 'python', 'django', 'sql', 'bootstrap', 'github', 'tailwind' ];
+const img = ['html', 'css', 'javascript', 'reactjs','nextjs', 'nodejs', 'redux', 'typescript', 'mongodb', 'git', 'python', 'django', 'sql', 'bootstrap', 'github', 'tailwind' ];
 
 const Ball = () => {
 

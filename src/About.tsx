@@ -44,13 +44,13 @@ const About = () => {
               </h3>
               <ul className="d-flex flex-column">
               <li>
-                  Master of Computer Application from Shri Ramswaroop Memorial College of Engineering and Managenent
+                  Master of Computer Application - Shri Ramswaroop Memorial College of Engineering and Managenent
                 </li>
                 <li>
-                  Bachelor of Science in Mathematics from University of Lucknow
+                  Bachelor of Science in Mathematics - University of Lucknow
                 </li>
-                <li>12th from Baba Gurukul Academy</li>
-                <li>10th from Akanksha Children Academy</li>
+                <li>Intermediate - CBSE board</li>
+                <li>High school - CBSE board</li>
               </ul>
             </div>
           </VerticalTimelineElement>
@@ -66,15 +66,15 @@ const About = () => {
                 Projects
               </h3>
               <ul className="d-flex flex-column">
-                <li><a href="https://regal-pudding-0c7ce2.netlify.app/" target="_blank">Note taking app</a></li>
-                <li>Image Gallery</li>
-                <li>Youtube clone</li>
-                <li>News app</li>
+                <li><a href="https://regal-pudding-0c7ce2.netlify.app/" className="text-decoration-none text-white" target="_blank">Note taking app</a></li>
+                <li><a href="https://glistening-souffle-d9ba22.netlify.app/" className="text-decoration-none text-white" target="_blank">Image Gallery</a></li>
+                <li><a href="https://idyllic-mandazi-9e3bd0.netlify.app/" className="text-decoration-none text-white" target="_blank">Youtube UI clone</a></li>
+                {/* <li>News app</li> */}
                 {/* <li>OMDB app</li> */}
-                <li>Crypto app</li>
+                {/* <li>Crypto app</li> */}
                 {/* <li>Text extractor</li> */}
-                <li>Text editor</li>
-                <li>Todo list</li>
+                {/* <li>Text editor</li> */}
+                {/* <li>Todo list</li> */}
               </ul>
             </div>
           </VerticalTimelineElement>
